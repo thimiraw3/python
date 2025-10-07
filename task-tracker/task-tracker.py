@@ -37,7 +37,6 @@ THEMES = {
 current_theme = "light"
 
 # ------------------- MAIN LOGIC -------------------
-
 def add_task():
     title = task_entry.get().strip()
     due = due_entry.get().strip()
@@ -109,7 +108,6 @@ def apply_theme():
     render_tasks()
 
 # ------------------- UI SETUP -------------------
-
 root = tk.Tk()
 root.title("🗂️ Task Tracker")
 root.geometry("800x650")
@@ -199,7 +197,6 @@ def render_tasks(query=""):
         card = tk.Frame(task_frame, bg=color, relief="groove", bd=2)
         card.pack(pady=6, padx=20, fill="x")
 
-        # Allow column 1 to expand so buttons move right
         card.columnconfigure(0, weight=0)
         card.columnconfigure(1, weight=1)
         card.columnconfigure(2, weight=0)
@@ -236,7 +233,6 @@ delete_all_btn = tk.Button(bottom_frame, text="Delete All", command=delete_all_t
                            bg="#ffcccc", relief="flat", padx=10, pady=5)
 delete_all_btn.pack(side="right", anchor="se")
 
-# Add hover effects
 delete_all_btn.bind("<Enter>", on_enter)
 delete_all_btn.bind("<Leave>", on_leave)
 
