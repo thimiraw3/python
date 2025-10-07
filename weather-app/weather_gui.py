@@ -5,7 +5,11 @@ from PIL import Image, ImageTk
 import io
 
 # OpenWeatherMap API Key
+<<<<<<< HEAD
+API_KEY = "e1e277c830f1a2973f152f4bf0e14b4b"  # <-- Replace with your key
+=======
 API_KEY = "YOUR_API_KEY"  # <-- Replace with your key
+>>>>>>> 30c9d9a1ec766d85fba75f52fe5af82a3e9c87c9
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
 
 recent_cities = []

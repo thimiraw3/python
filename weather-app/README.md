@@ -10,7 +10,11 @@ It fetches real-time weather data using the OpenWeatherMap API.
 - Search history
 - Clean UI with separate info boxes
 
+<<<<<<< HEAD
 ## Setup
+=======
+## ⚙️ Setup
+>>>>>>> 30c9d9a1ec766d85fba75f52fe5af82a3e9c87c9
 1. Install dependencies:
    
    pip install -r requirements.txt
@@ -25,5 +29,10 @@ It fetches real-time weather data using the OpenWeatherMap API.
 
 ---
 
+<<<<<<< HEAD
 ### Screenshots
 ![Homepage](screenshots/screenshot.png)
+=======
+### ✂️ Screenshot
+![Homepage](screenshots/screenshot.png)
+>>>>>>> 30c9d9a1ec766d85fba75f52fe5af82a3e9c87c9
