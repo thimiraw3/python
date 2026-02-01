@@ -46,32 +46,33 @@ Welcome to **PRODUCT_SCRAPER_V1**, a simple yet powerful Python project that scr
 
 ### Usage
 
-1. Open main.py and change the URL variable if you want to scrape a different site.
+- Open main.py and change the URL variable if you want to scrape a different site.
 
-2. Run the script:
+- Run the script:
 
    ```bash
    python main.py
 
-3. Your scraped products will be stored in data/products.db.
+- Your scraped products will be stored in data/products.db.
 
 ---
 
 ### Project Structure 🗂️
 
-PRODUCT_SCRAPER_V1/
-│
-├─ analysis/         # Any analysis scripts
-├─ data/
-│  └─ products.db    # SQLite database
-├─ database/
-│  └─ db.py          # Database functions
-├─ scraper/
-│  └─ scraper.py     # Scraping logic
-├─ main.py           # Entry point
-├─ requirements.txt  # Python dependencies
-└─ README.md         # Project overview
-
+  ```bash
+  PRODUCT_SCRAPER_V1/
+  │
+  ├─ analysis/         # Any analysis scripts
+  ├─ data/
+  │  └─ products.db    # SQLite database
+  ├─ database/
+  │  └─ db.py          # Database functions
+  ├─ scraper/
+  │  └─ scraper.py     # Scraping logic
+  ├─ main.py           # Entry point
+  ├─ requirements.txt  # Python dependencies
+  └─ README.md         # Project overview
+```
 ---
 
 ### Inspiration 💡
