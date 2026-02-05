@@ -1,10 +1,10 @@
-#📦 Python Web Scraper & Data Analyzer (V2)
+📦 Python Web Scraper & Data Analyzer (V2)
 
 This project is a Python-based web scraping and data analysis system. Version 1 focuses on scraping product data from a website and storing it in a database. Version 2 extends the project by analyzing the stored data and visualizing it using charts.
 
 ---
 
-##🚀 Features
+🚀 Features
 
 - Scrape product names and prices from a website
 - Store scraped data in a SQLite database
@@ -14,7 +14,7 @@ This project is a Python-based web scraping and data analysis system. Version 1 
 
 ---
 
-##🗂️ Project Structure
+🗂️ Project Structure
 
 project-root/
 │
@@ -34,7 +34,7 @@ project-root/
 
 ---
 
-##⚙️ Installation
+⚙️ Installation
 
 1. Clone the repository
 2. Create and activate a virtual environment (optional but recommended)
@@ -57,7 +57,7 @@ python main.py
 ---
 
 
-##📊 Data Analysis & Visualization (V2)
+📊 Data Analysis & Visualization (V2)
 
 -After scraping data, analyze and visualize it using:
 
@@ -71,13 +71,13 @@ python analyze.py
 
 ---
 
-##📝 Notes
+📝 Notes
 
 -This project scrapes data from http://books.toscrape.com/ for educational purposes only. Ensure you comply with website terms before scraping other websites.
 
 ---
 
-##📌 Versioning
+📌 Versioning
 
 V1 – Data scraping and database storage  
 V2 – Data analysis, CLI output, and chart visualization
