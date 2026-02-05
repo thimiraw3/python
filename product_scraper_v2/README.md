@@ -16,6 +16,7 @@ This project is a Python-based web scraping and data analysis system. Version 1 
 
 🗂️ Project Structure
 
+```bash
 project-root/
 │
 ├── main.py                  # Entry point for scraping (V1)
@@ -31,6 +32,7 @@ project-root/
 │
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
