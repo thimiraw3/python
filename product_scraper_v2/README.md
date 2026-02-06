@@ -1,4 +1,4 @@
-**📦 Python Web Scraper & Data Analyzer (V2)**
+# 📦 Python Web Scraper & Data Analyzer (V2)
 
 This project is a Python-based web scraping and data analysis system. Version 1 focuses on scraping product data from a website and storing it in a database. Version 2 extends the project by analyzing the stored data and visualizing it using charts.
 
