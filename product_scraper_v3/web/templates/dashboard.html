@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Stats cards */
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1 1 150px;
+            min-width: 150px;
+        }
+
+        .stat-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: #555;
+        }
+
+        .stat-card p {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            color: #222;
+        }
+
+        /* Chart */
+        .chart-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Product table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        tr:hover {
+            background: #e0f7fa;
+        }
+
+        @media (max-width: 768px) {
+            .stats-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>📊 Product Price Dashboard</h1>
+
+<div class="stats-container">
+    <div class="stat-card">
+        <h3>Total Products</h3>
+        <p>{{ stats.count }}</p>
+    </div>
+    <div class="stat-card">
+        <h3>Average Price</h3>
+        <p>{{ stats.avg_price }}</p>
+    </div>
+    <div class="stat-card">
+        <h3>Min Price</h3>
+        <p>{{ stats.min_price }}</p>
+    </div>
+    <div class="stat-card">
+        <h3>Max Price</h3>
+        <p>{{ stats.max_price }}</p>
+    </div>
+</div>
+
+<div class="chart-container">
+    <h2>📈 Price Chart</h2>
+    <img src="{{ url_for('static', filename='chart.png') }}" alt="Price Chart">
+</div>
+
+<h2>📦 Product List</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Rating</th>
+        <th>Date</th>
+    </tr>
+    {% for p in products %}
+    <tr>
+        <td>{{ p.name }}</td>
+        <td>{{ p.price }}</td>
+        <td>{{ p.rating }}</td>
+        <td>{{ p.scraped_date }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
